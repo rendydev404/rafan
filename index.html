@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Berita</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rafan News</a>
+            <div class="d-flex ms-auto">
+                <div class="input-group">
+                    <input type="text" id="search-input" class="form-control" placeholder="Cari berita...">
+                    <button id="search-button" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-main text-white text-center p-5">
+        <div class="container">
+            <h1 class="display-4">Tetap Terinformasi</h1>
+            <p class="lead">Berita terbaru dari seluruh dunia, langsung untuk Anda.</p>
+        </div>
+    </header>
+
+    <nav class="category-nav text-center py-4">
+        <div class="container">
+            <h2 class="h4 mb-3">Telusuri Kategori</h2>
+            <a class="category-link active" href="#" data-category="indonesia">Indonesia</a>
+            <a class="category-link" href="#" data-category="business">Bisnis</a>
+            <a class="category-link" href="#" data-category="technology">Teknologi</a>
+            <a class="category-link" href="#" data-category="sports">Olahraga</a>
+            <a class="category-link" href="#" data-category="entertainment">Hiburan</a>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <h2 class="text-center mb-4">Berita Terbaru</h2>
+        <div id="loader" class="d-none justify-content-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Memuat...</span>
+            </div>
+        </div>
+        <div id="news-container" class="row"></div>
+        <div class="text-center mt-4">
+            <button id="read-more-btn" class="btn btn-outline-primary btn-lg d-none">Muat Lebih Banyak</button>
+        </div>
+    </main>
+
+    <footer class="footer-main text-white mt-5 p-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Rafan News</h5>
+                    <p>Sumber terpercaya untuk berita yang akurat dan terkini.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5 class="text-uppercase">Ikuti Kami</h5>
+                    <div class="social-icons mt-3">
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Rafan News. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
